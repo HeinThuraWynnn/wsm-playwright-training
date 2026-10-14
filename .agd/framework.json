@@ -1,0 +1,76 @@
+{
+  "version": "2.1",
+  "project": "playwright-training",
+  "adapters": [],
+  "risk": "standard",
+  "skills": [
+    "skills/discovery/SKILL.md",
+    "skills/specification/SKILL.md",
+    "skills/planning/SKILL.md",
+    "skills/tdd/SKILL.md",
+    "skills/bug-diagnosis/SKILL.md",
+    "skills/safe-refactoring/SKILL.md",
+    "skills/code-review/SKILL.md",
+    "skills/verification/SKILL.md",
+    "skills/documentation/SKILL.md",
+    "skills/handoff/SKILL.md"
+  ],
+  "references": [
+    "AGENTS.md",
+    ".agd/policies/architecture.md",
+    ".agd/policies/security.md",
+    ".agd/policies/approvals.md",
+    ".agd/policies/testing.md",
+    ".agd/workflows/feature.md",
+    ".agd/workflows/bugfix.md",
+    ".agd/workflows/refactor.md",
+    ".agd/workflows/review.md"
+  ],
+  "commands": [
+    {
+      "id": "governance",
+      "category": "static",
+      "argv": [
+        "python3",
+        "vendor/universal-agd/agd.py",
+        "validate"
+      ],
+      "timeout": 60,
+      "operation": "local-check"
+    },
+    {
+      "id": "typecheck",
+      "category": "static",
+      "argv": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "timeout": 60,
+      "operation": "local-check"
+    },
+    {
+      "id": "outcomes",
+      "category": "unit",
+      "argv": [
+        "npm",
+        "run",
+        "test:unit"
+      ],
+      "timeout": 60,
+      "operation": "local-check"
+    },
+    {
+      "id": "test-discovery",
+      "category": "static",
+      "argv": [
+        "npm",
+        "run",
+        "test:list"
+      ],
+      "timeout": 60,
+      "operation": "local-check"
+    }
+  ],
+  "evidence_dir": ".agd/evidence"
+}

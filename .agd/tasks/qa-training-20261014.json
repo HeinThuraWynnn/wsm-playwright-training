@@ -1,0 +1,66 @@
+{
+  "task_id": "qa-training-20261014",
+  "state": "BLOCKED",
+  "acceptance": [
+    {
+      "criterion": "Preserve user work and pin AGD",
+      "met": true
+    },
+    {
+      "criterion": "Provide traceable strategy and case matrix",
+      "met": true
+    },
+    {
+      "criterion": "Implement isolated suites and honest evidence",
+      "met": true
+    },
+    {
+      "criterion": "Verify live cart behavior",
+      "met": false
+    }
+  ],
+  "evidence": [
+    ".agd/evidence/scaffold-final-20261014.json",
+    ".agd/evidence/qa-training-handoff-20261014.json",
+    "evidence/2026-10-14T06-21-49-197Z-smoke/summary.json"
+  ],
+  "review": "Self-review recorded in docs/plan.md and docs/handoff.md; live behavior remains unverified.",
+  "history": [
+    {
+      "from": "DISCOVER",
+      "to": "SPECIFY",
+      "reason": ""
+    },
+    {
+      "from": "SPECIFY",
+      "to": "PLAN",
+      "reason": ""
+    },
+    {
+      "from": "PLAN",
+      "to": "RED",
+      "reason": ""
+    },
+    {
+      "from": "RED",
+      "to": "GREEN",
+      "reason": ""
+    },
+    {
+      "from": "GREEN",
+      "to": "REFACTOR",
+      "reason": ""
+    },
+    {
+      "from": "REFACTOR",
+      "to": "VERIFY",
+      "reason": ""
+    },
+    {
+      "from": "VERIFY",
+      "to": "BLOCKED",
+      "reason": "HTTP 403 Cloudflare verification; no bypass. Resume VERIFY when accessible."
+    }
+  ],
+  "resume_state": "VERIFY"
+}

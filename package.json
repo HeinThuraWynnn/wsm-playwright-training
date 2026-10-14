@@ -1,0 +1,19 @@
+{
+  "name": "playwright-training",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node --test scripts/*.test.mjs",
+    "test:list": "playwright test --list",
+    "test:smoke": "node scripts/run.mjs smoke",
+    "test:sanity": "node scripts/run.mjs sanity",
+    "test:regression": "node scripts/run.mjs regression",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "26.6.5",
+    "typescript": "7.0.2"
+  }
+}

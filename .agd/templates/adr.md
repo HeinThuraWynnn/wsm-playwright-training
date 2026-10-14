@@ -1,0 +1,7 @@
+# ADR [identifier]: [decision]
+Status: [proposed/accepted]
+Context: [problem]
+Decision: [choice]
+Alternatives: [considered options]
+Consequences: [tradeoffs]
+Migration / reversal: [path]

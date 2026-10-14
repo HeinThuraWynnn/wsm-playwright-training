@@ -1,0 +1,9 @@
+node_modules/
+test-results/
+playwright-report/
+.env
+.auth/
+evidence/
+.agd/evidence/
+__pycache__/
+*.py[cod]

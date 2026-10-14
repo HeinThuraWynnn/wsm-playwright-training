@@ -1,0 +1,10 @@
+# Handoff
+Task ID and scope: [value]
+Acceptance criteria and results: [mapping]
+Changed files: [paths and reasons]
+Commands and actual results: [PASS/FAIL/BLOCKED/NOT RUN/NOT APPLICABLE]
+Evidence references: [paths]
+Failures and unverified behavior: [list]
+Approvals and authorization source: [decisions]
+Risks/blockers: [list]
+Follow-up actions: [next steps]
